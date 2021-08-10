@@ -4,12 +4,14 @@ import './Navbar.scss'
 export default function Navbar() {
 
     const navSlide = () => {
-        const nav = document.querySelector('.menu-site');
-        const burger = document.querySelector('.burger');
-        const menuLinks = document.querySelectorAll('li');
+        const nav:Element | null = document.querySelector('.menu-site');
+        const burger:Element | null = document.querySelector('.burger');
+        const menuLinks:NodeListOf<HTMLLIElement> = document.querySelectorAll('li');
 
-        nav!.classList.toggle('nav-active');
-        burger!.classList.toggle('burger-active');
+        if(nav != null && burger != null){
+            nav.classList.toggle('nav-active');
+            burger!.classList.toggle('burger-active');
+        }
 
         menuLinks.forEach((link, index) => {
             if(link.style.animation){
@@ -23,9 +25,9 @@ export default function Navbar() {
     }
 
 
-    function alert(btn:string) {
-        console.log(btn)
-    }
+    // function alert(btn:string) {
+    //     console.log(btn)
+    // }
 
 
 
