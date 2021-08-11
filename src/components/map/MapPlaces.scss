@@ -1,4 +1,10 @@
 .map-places-module{
-    position: absolute;
-    top: 10vh;
+    max-height: 72vh;
+    aspect-ratio: 16/9;
+}
+
+@media screen and (max-width:790px){
+    .map-places-module{
+        width: 100% !important;
+    }
 }

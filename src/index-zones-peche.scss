@@ -1,11 +1,49 @@
 .body{
   height: 100vh;
+  background-color: #777777;
 
   .container-navbar{
     height: 8vh;
   }
+  .container-meteo{
+    height: 10vh;
+    width: 100%;
+  }
   .container-body{
-    height: 92vh;
-    background-color: rgb(119, 119, 119);
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .container-map-zones{
+      width: 65%;
+      max-height: 96vh;
+    }
+  }
+  .container-list-zones{
+    width: 30%;    
+    background-color: lightgrey;
+
+    .list-zones{
+    }
+  }
+}
+
+@media screen and (max-width: 780px){
+  .container-body{
+    flex-direction: column !important;
+    justify-content: none !important;
+
+    .container-map-zones{
+      width: 90% !important;
+      margin: auto;
+    }
+  }
+  .container-list-zones{
+    width: 90% !important;
+    height: 100vh;
+    margin: auto;
+    margin-top: auto;
+    margin-top: 3vh;
   }
 }
