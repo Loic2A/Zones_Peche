@@ -1,4 +1,5 @@
-import React from 'react'
+// import React from 'react'
+import MeteoInfos from '../meteo/MeteoInfos';
 import './Navbar.scss'
 
 export default function Navbar() {
@@ -24,19 +25,16 @@ export default function Navbar() {
 
     }
 
-
-    // function alert(btn:string) {
-    //     console.log(btn)
-    // }
-
-
-
-
     return (
         <div className="navbar-module">
             <nav>
                 <div className="logo-site">
                     Zone Peche
+                </div>
+                <div>
+                    <MeteoInfos 
+                        meteoInfosLite={true}
+                    />
                 </div>
                 <ul className="menu-site">
                     <li><a onClick={(e) => alert("accueil")}>Accueil</a></li>

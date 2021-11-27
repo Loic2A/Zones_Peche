@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { getParsedCommandLineOfConfigFile } from 'typescript';
+// import { getParsedCommandLineOfConfigFile } from 'typescript';
 import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/api';
 import './MapPlaces.scss';
 

@@ -1,4 +1,31 @@
 .wi{
-    font-size: 40px;
+    font-size: 30px;
     color: lightgrey;
 }
+
+.container-meteo-lite{
+    display: flex;
+    
+    *{
+        margin-left: 4px;
+        margin-right: 4px;            
+    }
+
+    .variable-infos{
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+
+        .prevision-module{
+            display: flex;
+        }
+        .meteo-disabled{
+            color: #dd3c3c;
+            font-size: 15px;
+            margin: auto;
+            margin-top: 7px;
+        }
+    }
+}
+
+

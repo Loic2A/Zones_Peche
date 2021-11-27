@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './index-zones-peche';
 import reportWebVitals from './reportWebVitals';
 import IndexZonesPeche from './index-zones-peche';
 
